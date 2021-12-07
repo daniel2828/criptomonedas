@@ -9,7 +9,6 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 api = krakenex.API()
 k = KrakenAPI(api)
-
 def vwap(prices, volumes):
     prices_ = np.array(prices)
     volumes_ = np.array(volumes)
