@@ -9,14 +9,7 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 api = krakenex.API()
 k = KrakenAPI(api)
-def show_line_chart(date_list, value_list, titulo_grafica,eje_x,eje_y):
-    plt.plot(date_list, value_list)
-    plt.title(titulo_grafica)
-    plt.xlabel(eje_x)
-    plt.ylabel(eje_y)
-    dtFmt = mdates.DateFormatter('%d-%b')  # define the formatting
-    plt.gca().xaxis.set_major_formatter(dtFmt)  # apply the format to the desired axis
-    plt.show()
+
 def vwap(prices, volumes):
     prices_ = np.array(prices)
     volumes_ = np.array(volumes)
